@@ -1,19 +1,28 @@
 const express = require('express');
-const tsc = express();
+const mongoose = require('mongoose');
+const app = express();
 const port = 5000;
+const url = "mongodb://localhost:27017/test"
 
-tsc.get('/',(req,res)=> {
+mongoose.connect(url)
+.then(()=> console.log('connected!'));
+
+app.get('/',(req,res)=> {
     res.send('hello Akrypt');
 })
 
-tes.get('/About',(req,res)=>{
+app.get('/About',(req,res)=> {
     res.send('welcome to about');
 })
 
-tes.get('/contact',(req,res)=>{
+app.get('/contact',(req,res)=> {
     res.send('welcome to contact');
 })
 
- tsc.listen(port,()=>{
+app.get('/social Media',(req,res)=> {
+    res.send('welcome to social Media');
+})
+
+ app.listen(port,()=>{
     console.log(`server is runing on port ${port}`);
  })
