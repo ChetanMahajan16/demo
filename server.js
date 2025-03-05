@@ -10,8 +10,8 @@ tes.get('/About',(req,res)=>{
     res.send('welcome to about');
 })
 
-tes.get('/About',(req,res)=>{
-    res.send('welcome to about');
+tes.get('/contact',(req,res)=>{
+    res.send('welcome to contact');
 })
 
  tsc.listen(port,()=>{
