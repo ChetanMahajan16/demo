@@ -9,6 +9,11 @@ tsc.get('/',(req,res)=> {
 tes.get('/About',(req,res)=>{
     res.send('welcome to about');
 })
+
+tes.get('/About',(req,res)=>{
+    res.send('welcome to about');
+})
+
  tsc.listen(port,()=>{
     console.log(`server is runing on port ${port}`);
  })
