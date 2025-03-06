@@ -23,6 +23,10 @@ app.get('/social Media',(req,res)=> {
     res.send('welcome to social Media');
 })
 
+app.get('/Services',(req,res)=>{
+    res.send('Welcome to our services');
+})
+
  app.listen(port,()=>{
     console.log(`server is runing on port ${port}`);
  })
